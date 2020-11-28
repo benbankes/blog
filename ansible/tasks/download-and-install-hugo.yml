@@ -11,7 +11,7 @@
 
 - name: Download hugo {{hugo_version}}
   get_url:
-    url: https://github.com/gohugoio/hugo/releases/download/v{{hugo_version}}/hugo_{{hugo_version}}_Linux-64bit.deb
+    url: https://github.com/gohugoio/hugo/releases/download/v{{hugo_version}}/hugo_extended_{{hugo_version}}_Linux-64bit.deb
     dest: "{{playbook_dir}}/files/hugo.deb"
     mode: a+x
     force: yes
