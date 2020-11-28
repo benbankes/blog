@@ -21,10 +21,20 @@ To setup a development environment with ansible, run the ansible playbook.
 Provide a bulleted list of links here, as extensions arise
 
 
-### How to create a new page
+## How to
+
+### Create a new page
 
 ```
 hugo new posts/my-first-post.md
 ```
 
 This will create a new markdown file under the posts folder, based on the `default.md` template/archetype
+
+
+### Deploy
+
+```
+# Inside /benbankes.com
+./deploy.sh "Your optional commit message"
+```
