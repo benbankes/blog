@@ -1,0 +1,7 @@
+- name: Initialize a development environment for hugo static site generator
+  hosts: localhost
+  vars:
+    hugo_version: 0.79.0
+
+  tasks:
+    - include: tasks/download-and-install-hugo.yml

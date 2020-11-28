@@ -1,0 +1,24 @@
+- name: Gather facts about packages
+  package_facts:
+    manager: auto
+
+- name: Uninstall hugo {{ansible_facts.packages.hugo[0].version}}
+  apt:
+    name: hugo
+    state: absent
+  become: yes
+  when: "'hugo' in ansible_facts.packages and ansible_facts.packages.hugo[0].version != hugo_version"
+
+- name: Download hugo {{hugo_version}}
+  get_url:
+    url: https://github.com/gohugoio/hugo/releases/download/v{{hugo_version}}/hugo_{{hugo_version}}_Linux-64bit.deb
+    dest: "{{playbook_dir}}/files/hugo.deb"
+    mode: a+x
+    force: yes
+  when: "'hugo' not in ansible_facts.packages or ansible_facts.packages.hugo[0].version != hugo_version"
+
+- name: Install hugo {{hugo_version}}
+  apt:
+    deb: files/hugo.deb
+  become: yes
+  when: "'hugo' not in ansible_facts.packages or ansible_facts.packages.hugo[0].version != hugo_version"
