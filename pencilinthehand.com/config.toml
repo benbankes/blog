@@ -15,8 +15,8 @@ enableRobotsTXT = true
   filename = "sitemap.xml"
 
 [params]
-  favicon = ""
-  site_logo = ""
+  favicon = "/images/favicon-black.svg"
+  site_logo = "/images/favicon-white.svg"
   description = "I am a pencil in the hand of a writing God, writing love to all the world"
   facebook = ""
   twitter = ""

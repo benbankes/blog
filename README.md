@@ -43,6 +43,8 @@ This will create a new markdown file under the posts folder, based on the `defau
 ```
 # Inside /benbankes.com
 hugo && ./deploy.sh "Your optional commit message"
+# Inside /pencilinthehand.com
+hugo && npx netlify-cli deploy --prod
 ```
 
 ## Notes
