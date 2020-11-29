@@ -1,0 +1,6 @@
+---
+description: "Written with Love"
+---
+
+> I am a little **pencil in the hand** of a writing God, who is sending a love letter to the world.
+\- Mother Teresa

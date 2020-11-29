@@ -42,5 +42,11 @@ This will create a new markdown file under the posts folder, based on the `defau
 
 ```
 # Inside /benbankes.com
-./deploy.sh "Your optional commit message"
+hugo && ./deploy.sh "Your optional commit message"
 ```
+
+## Notes
+
+- I think I should have run `git submodule add` for benbankes.com from the root folder.  Maybe I will get around to changing that.
+- pencilinthehand.com uses the "go modules" way of adding a theme.  This seems best.
+- I might want to eventually split sites and the hugo install into separate repositories.
