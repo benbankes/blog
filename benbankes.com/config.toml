@@ -50,7 +50,7 @@ paginate = 20
   name = "LinkedIn"
   icon = "fa fa-linkedin fa-2x"
   weight = 3
-  url = "https://linkedin.com/benbankes/"
+  url = "https://linkedin.com/in/benbankes/"
 
 # Menu links
 [[menu.main]]
