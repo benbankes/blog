@@ -20,17 +20,23 @@ To setup a development environment with ansible, run the ansible playbook.
 
 Provide a bulleted list of links here, as extensions arise
 
-
 ## How to
+
+### Start the development server
+
+```
+# Inside /benbankes.com
+hugo serve
+```
 
 ### Create a new page
 
 ```
+# Inside /benbankes.com
 hugo new posts/my-first-post.md
 ```
 
 This will create a new markdown file under the posts folder, based on the `default.md` template/archetype
-
 
 ### Deploy
 
